@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宜記品牌故事</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:微軟正黑, 'Microsoft JhengHei', sans-serif;
+        }
+        .wrap {
+            width: 1200px;
+            margin:50px auto;
+        }
+        body {
+            background-color: #f2e9c6;
+        }
+        .header {
+            background-image: url(./img/banner.png);
+            width: 1200px;
+            height: 200px;
+            position: relative;
+            margin: auto;
+        }
+        .header h1 {
+            position: absolute;
+            left: 90px;
+            top: 20px;
+        }
+
+        .header h2 {
+            position: absolute;
+            right: 90px;
+            top: 130px;
+            color: #888;
+        }
+
+        .header h3 {
+            position: absolute;
+            right: 90px;
+            top: 90px;
+            color: #888;
+            font-size: 20px;
+        }
+
+        .nav {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .nav ul li {
+            display: inline;
+            font-size: 20px;
+        }
+
+        .nav ul li a {
+            color: #795d59;
+            background-color: #cab29c;
+            text-decoration: none;
+            padding: 14px 50px;
+            border-radius: 34px;
+            margin-left: 30px;
+        }
+
+        .nav ul li a:hover {
+            background-color: rgba(243, 123, 79, 0.584);
+            color: #fff;
+        }
+
+        .nav1 {
+            text-align: right;
+        }
+
+        .nav1 ul {
+            list-style: none;
+            padding-top: 5px;
+            padding-bottom: 20px;
+        }
+
+        .nav1 ul li a {
+            color: red;
+            background-color: #e7a160;
+            text-decoration: none;
+            padding: 14px 50px;
+            border-radius: 34px;
+            margin-left: 30px;
+        }
+
+        .nav1 ul li a:hover {
+            background-color: rgba(243, 123, 79, 0.584);
+            color: #fff;
+        }
+
+        .info1 {
+
+            background-color: #ebe2c7;
+        }
+
+        .info1 h3 {
+            width: 50%;
+            float: left;
+            padding-left: 60px;
+            font-size: 18px;
+            text-align: justify;
+            color: rgb(88, 88, 88);
+        }
+
+        .info1 h4 {
+
+            color: rgb(200, 199, 199);
+            text-align: right;
+            padding-bottom: 30px;
+            padding-right: 70px;
+        }
+
+        .info1 img {
+            padding-bottom: 2px;
+            margin-left: 80px;
+
+        }
+
+        .info1 h2 {
+            text-align: left;
+            color: #888;
+            padding: 80px;
+            font-size: 35px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+
+
+
+        .info {
+            background-color: #ecdeb6;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .info .box {
+            display: inline-block;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-right: 35px;
+        }
+
+        .info .box img {
+            border-radius: 50%;
+            border: 5px solid #aeaeb1;
+        }
+
+        .info .box h3 {
+            color: #888;
+            font-size: 18px;
+        }
+
+        .wrapper {
+            width: 1200px;
+            height: 250px;
+            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+            background: #e5d8ba;
+            position: relative;
+            overflow: hidden;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .wrapper h4 {
+            color: rgb(168, 164, 164);
+            text-align: center;
+            line-height: 400px;
+        }
+
+        .title {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            line-height: 245px;
+            text-align: center;
+            color: rgb(253, 78, 78);
+            font-family: serif;
+            font-size: 30px;
+        }
+
+        .wave {
+            background: #f7be73;
+            width: 2200px;
+            height: 2200px;
+            border-radius: 40%;
+            opacity: 0.4;
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            margin-left: -1100px;
+            margin-top: 200px;
+            transform-origin: center;
+            animation: drift 11s infinite linear;
+        }
+
+        .wave.two {
+            animation: drift 13s infinite linear;
+        }
+
+        .wave.three {
+            animation: drift 15s infinite linear;
+            opacity: 0.1;
+        }
+
+        @keyframes drift {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>
+                <img src="./img/logo.png" alt="">
+            </h1>
+            <h2>宜記出品</h2>
+            <h3>食安有信心,消費真安心</h3>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="./index3.html">品牌故事</a></li>
+                <li><a href="./index2.html">所有商品</a></li>
+                <li><a href="./contact.html">聯絡我們</a></li>
+                <li><a href="./login.html">會員登入</a></li>
+            </ul>
+            <div class="nav1">
+                <ul>
+                    <li><a href="./index.html">回首頁</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="info1">
+            <h2>品牌故事</h2>
+            <h3>
+                在台灣的邊鄉小鎮，住著一對年輕的夫妻， 阿傑和小玲。他們從小在貧困的家庭中長大， 對生活的艱辛有著深刻的體會。阿傑為賺較多薪水一直從事派遣零工， 小玲在夜市擺攤維持生計。儘管生活艱難， 但兩人一直有一個共同的夢想："擁有自己的小生意， 改善家庭生活，也為孩子們創造更好的未來。"
+                某天，他們在夜市觀察到，許多台北上班族或學生為了節省時間， 常常選擇外食，但大家又希望能夠吃上更健康的家常菜。靈機一動， 阿傑和小玲決定打造一種便捷的「台式家常料理包」， 讓忙碌的人們可以輕鬆在家做出熱騰騰的台式美食。
+                說幹就幹，夫妻倆拿出了僅有的積蓄，租了一間位於偏遠工業區的小廚房。 為了節省每一分錢，他們親自去南部菜市場挑選新鮮食材， 從台南的虱目魚、彰化的黑豬肉，到嘉義的山海產，他們都親自跑一趟， 確保料理包中的每一份食材都是最優質的。
+                創業初期並不順利。因為沒有足夠的宣傳經費， 阿傑和小玲只能靠人際圈和夜市推廣。 很多夜市攤販嫌棄他們的料理包沒有名氣， 不願意合作，夫妻倆只能挨家挨戶推銷， 甚至自己站在夜市邊角提供免費試吃。 然而，他們不輕言放棄。每一個料理包都凝聚著他們對家鄉味道的執著，
+                每一款菜餚都反覆試驗，務求達到讓人想起阿嬤廚房裡飄出的香味。 他們的真誠與努力打動了許多顧客，一傳十、十傳百， 料理包的口碑在網路社群和部落客的推薦下，開始傳開。 隨著訂單的增長，阿傑和小玲的小工廠逐漸擴大，
+                他們也和更多鄉親和農戶契作，優先收購本地小農的食材， 幫助更多基層農民脫貧。如今， 他們的台式家常料理包已經走進台北、 台中甚至南台灣的超市，成為許多人心中的便利又美味的選擇。 每當有人問起他們有今天的”小成就”秘訣時，
+                阿傑總會笑著說：「台灣最寶貴的，不只是土地上的食材， 還有我們不放棄的精神。無論再困難， 只要一心一意做出好產品，大家自然會看見。」
+            </h3>
+            <p><img src="./img/chef.gif" alt=""></p>
+            <h4>圖片來自https://www.yotopic.com/</h4>
+
+
+        </div>
+
+        <div class="info">
+            <div class="box">
+                <img src="./img/iso22000701a.gif" alt="">
+                <h3>ISO 22000</h3>
+                <h3>ISO 22000是一套國際通用的</h3>
+                <h3>食品安全管理系統標準</h3>
+            </div>
+            <div class="box">
+                <img src="./img/haccp701a.gif" alt="">
+                <h3>HACCP</h3>
+                <h3>HACCP中文稱為</h3>
+                <h3>危害分析與重要管制點</h3>
+            </div>
+            <div class="box">
+                <img src="./img/fssc-2200701a.gif" alt="">
+                <h3>FSSC 22000</h3>
+                <h3>是一項以ISO22000為基礎 </h3>
+                <h3>所建立的食品安全計畫</h3>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="wave one"></div>
+            <div class="wave two"></div>
+            <div class="wave three"></div>
+            <div class="title">宜記食品有限公司</div>
+            <h4>Copyright &copy; 宜記食品有限公司 版權所有. All rights reserved.</h4>
+        </div>
+    </div>
+    
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery.jcarousellite.min.js"></script> 
+    <script>
+        $(function () {
+            $('.base').jCarouselLite({
+                auto: 1200,
+                speed: 600, 
+                scroll: 1,  
+                visible: 3, 
+            });
+        });
+    </script>
+</body>
+
+
+</html>

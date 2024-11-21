@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>宜記聯絡我們</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family:微軟正黑, 'Microsoft JhengHei', sans-serif;
+        }
+
+        .wrap {
+            width: 1200px;
+            margin: 50px auto;
+
+        }
+
+        body {
+            background-color: #f2e9c6;
+
+        }
+
+        .header {
+            background-image: url(./img/banner.png);
+            width: 1200px;
+            height: 200px;
+            position: relative;
+            margin: auto;
+        }
+
+        .header h1 {
+            position: absolute;
+            left: 90px;
+            top: 20px;
+        }
+
+        .header h2 {
+            position: absolute;
+            right: 90px;
+            top: 130px;
+            color: #888;
+        }
+
+        .header h3 {
+            position: absolute;
+            right: 90px;
+            top: 90px;
+            color: #888;
+            font-size: 20px;
+        }
+
+        .nav {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .nav ul li {
+            display: inline;
+            font-size: 20px;
+        }
+
+        .nav ul li a {
+            color: #795d59;
+            background-color: #cab29c;
+            text-decoration: none;
+            padding: 14px 50px;
+            border-radius: 34px;
+            margin-left: 30px;
+        }
+
+        .nav ul li a:hover {
+            background-color: rgba(243, 123, 79, 0.584);
+            color: #fff;
+        }
+
+        .nav1 {
+            text-align: right;
+        }
+
+        .nav1 ul {
+            list-style: none;
+            padding-top: 5px;
+            padding-bottom: 20px;
+        }
+
+        .nav1 ul li a {
+            color: red;
+            background-color: #e7a160;
+            text-decoration: none;
+            padding: 14px 50px;
+            border-radius: 34px;
+            margin-left: 30px;
+        }
+
+        .nav1 ul li a:hover {
+            background-color: rgba(243, 123, 79, 0.584);
+            color: #fff;
+        }
+
+        .base {
+            background-color: #ebe2c7;
+            padding: 5px;
+        }
+
+        .base img {
+            width: 300px;
+            height: 300px;
+            margin: 48px;
+            vertical-align: 60px;
+        }
+
+        .info1 {
+
+            background-color: #ebe2c7;
+            text-align: center;
+            font-size: 18px;
+
+        }
+        .info1 p{
+            color: #888;
+        }
+
+        .info1 ul {
+            list-style: none;
+        }
+
+        .info1 .box {
+            width: 300px;
+            background-color: #f8e0ab;
+            display: inline-block;
+            padding-bottom: 10px;
+            margin-left: 20px;
+        }
+
+        .info1 h3 {
+            width: 900px;
+            color: #888;
+            line-height: 1.5;
+            font-size: 18px;
+            text-align: justify;
+            float: left;
+            padding-left: 160px;
+            padding-bottom: 40px;
+        }
+
+        .info1 h2 {
+            text-align: left;
+            color: #888;
+            padding: 80px;
+            font-size: 35px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+
+        }
+
+        .info {
+            background-color: #ecdeb6;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .info .box {
+            display: inline-block;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-right: 35px;
+        }
+
+        .info .box img {
+            border-radius: 50%;
+            border: 5px solid #aeaeb1;
+        }
+
+        .info .box h3 {
+            color: #888;
+            font-size: 18px;
+        }
+
+        .wrapper {
+            width: 1200px;
+            height: 250px;
+            box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+            background: #e5d8ba;
+            position: relative;
+            overflow: hidden;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .wrapper h4 {
+            color: rgb(168, 164, 164);
+            text-align: center;
+            line-height: 400px;
+        }
+
+        .title {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            line-height: 245px;
+            text-align: center;
+            color: rgb(253, 78, 78);
+            font-family: serif;
+            font-size: 30px;
+        }
+
+        .wave {
+            background: #f7be73;
+            width: 2200px;
+            height: 2200px;
+            border-radius: 40%;
+            opacity: 0.4;
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            margin-left: -1100px;
+            margin-top: 200px;
+            transform-origin: center;
+            animation: drift 11s infinite linear;
+        }
+
+        .wave.two {
+            animation: drift 13s infinite linear;
+        }
+
+        .wave.three {
+            animation: drift 15s infinite linear;
+            opacity: 0.1;
+        }
+
+        @keyframes drift {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>
+                <img src="./img/logo.png" alt="">
+            </h1>
+            <h2>宜記出品</h2>
+            <h3>食安有信心,消費真安心</h3>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="./index3.html">品牌故事</a></li>
+                <li><a href="./index2.html">所有商品</a></li>
+                <li><a href="./contact.html">聯絡我們</a></li>
+                <li><a href="./login.html">會員登入</a></li>
+            </ul>
+            <div class="nav1">
+                <ul>
+                    <li><a href="./index.html">回首頁</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="info1">
+            <h2>聯絡我們</h2>
+            <h3>感謝您對我們的關注與支持！我們熱誠歡迎您的聯絡，無論是對我們的產品、服務或任何問題，我們都將竭誠為您提供幫助。您的每一個建議與需求對我們來說都極為重要，我們將以最快的速度回應並為您解答。請隨時透過電話、電子郵件或其他聯絡方式與我們取得聯繫，我們期待與您建立長久且愉快的合作關係。再次感謝您的信任，我們將不斷努力，為您提供更好的服務體驗！</h3>
+            <div class="box">
+                <ul>
+                    <li><a href="https://mail.google.com/mail"><img src="./img/mial icon.png" alt=""></a></li>
+                </ul>
+                <p>egfood@gmail.com.tw</p>
+            </div>
+            <div class="box">
+                <ul>
+                    <li><a href="https://line.me/tw/"><img src="./img/line icon.png" alt=""></a></li>
+                </ul>
+                <p>line ID:02-1234567</p>
+            </div>
+            <div class="box">
+
+                <ul>
+                    <li><a href="https://maps.app.goo.gl/WMZwadieq8UdknM28"><img src="./img/map icon.png" alt=""></a></li>
+                </ul>
+                <p>新北市鶯歌區中正路666號</p>
+            </div>
+
+        </div>
+        <div class="base">
+            <ul>
+                <li><img src="./database/pic-01.png" alt=""></li>
+                <li><img src="./database/pic-02.png" alt=""></li>
+                <li><img src="./database/pic-03.png" alt=""></li>
+                <li><img src="./database/pic-04.png" alt=""></li>
+                <li><img src="./database/pic-05.png" alt=""></li>
+                <li><img src="./database/pic-06.png" alt=""></li>
+                <li><img src="./database/pic-07.png" alt=""></li>
+                <li><img src="./database/pic-08.png" alt=""></li>
+                <li><img src="./database/pic-09.png" alt=""></li>
+                <li><img src="./database/pic-10.png" alt=""></li>
+                <li><img src="./database/pic-11.png" alt=""></li>
+                <li><img src="./database/pic-12.png" alt=""></li>
+                <li><img src="./database/pic-13.png" alt=""></li>
+                <li><img src="./database/pic-14.png" alt=""></li>
+                <li><img src="./database/pic-15.png" alt=""></li>
+                <li><img src="./database/pic-16.png" alt=""></li>
+                <li><img src="./database/pic-17.png" alt=""></li>
+                <li><img src="./database/pic-18.png" alt=""></li>
+                <li><img src="./database/pic-19.png" alt=""></li>
+                <li><img src="./database/pic-20.png" alt=""></li>
+                <li><img src="./database/pic-21.png" alt=""></li>
+                <li><img src="./database/pic-22.png" alt=""></li>
+                <li><img src="./database/pic-23.png" alt=""></li>
+                <li><img src="./database/pic-24.png" alt=""></li>
+                <li><img src="./database/pic-25.png" alt=""></li>
+                <li><img src="./database/pic-26.png" alt=""></li>
+                <li><img src="./database/pic-27.png" alt=""></li>
+                <li><img src="./database/pic-28.png" alt=""></li>
+                <li><img src="./database/pic-29.png" alt=""></li>
+                <li><img src="./database/pic-30.png" alt=""></li>
+                <li><img src="./database/pic-31.png" alt=""></li>
+                <li><img src="./database/pic-32.png" alt=""></li>
+                <li><img src="./database/pic-33.png" alt=""></li>
+                <li><img src="./database/pic-34.png" alt=""></li>
+                <li><img src="./database/pic-35.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="info">
+            <div class="box">
+                <img src="./img/iso22000701a.gif" alt="">
+                <h3>ISO 22000</h3>
+                <h3>ISO 22000是一套國際通用的</h3>
+                <h3>食品安全管理系統標準</h3>
+            </div>
+            <div class="box">
+                <img src="./img/haccp701a.gif" alt="">
+                <h3>HACCP</h3>
+                <h3>HACCP中文稱為</h3>
+                <h3>危害分析與重要管制點</h3>
+            </div>
+            <div class="box">
+                <img src="./img/fssc-2200701a.gif" alt="">
+                <h3>FSSC 22000</h3>
+                <h3>是一項以ISO22000為基礎 </h3>
+                <h3>所建立的食品安全計畫</h3>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="wave one"></div>
+            <div class="wave two"></div>
+            <div class="wave three"></div>
+            <div class="title">宜記食品有限公司</div>
+            <h4>Copyright &copy; 宜記食品有限公司 版權所有. All rights reserved.</h4>
+        </div>
+    </div>
+   
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery.jcarousellite.min.js"></script>
+    <script>
+        $(function () {
+            $('.base').jCarouselLite({
+                auto: 1200,  
+                speed: 600, 
+                scroll: 1,   
+                visible: 3, 
+            });
+        });
+    </script>
+</body>
+
+
+</html>
